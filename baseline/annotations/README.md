@@ -21,3 +21,12 @@ $ docker run -it -p 8080:8080 \
 1. Define the list of classes based on manual inspection of the source videos.
 2. Annotate retrieved frames.
 3. Export in YOLO format for further model training (expected location `data/annotated/`)
+
+
+# Classes to be used for labelling
+- напиток
+- соус
+- жидкое
+- салат
+- мясо
+- хлеб
