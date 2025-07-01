@@ -30,3 +30,6 @@ $ docker run -it -p 8080:8080 \
 - салат
 - мясо
 - хлеб
+
+# Labelling Process
+<img width="1680" alt="Screenshot 2025-07-01 at 19 14 39" src="https://github.com/user-attachments/assets/afdd0213-0e97-435a-8fe8-1f3ba941de80" />
