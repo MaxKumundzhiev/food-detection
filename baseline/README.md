@@ -26,5 +26,5 @@ sample output:
 2025-07-01 18:14:18.446 | SUCCESS  | concrete:extract:52 - saved /Users/macbook/git/food-detection/food-detection/baseline/data/frames/18_14_18.jpg
 2025-07-01 18:14:18.881 | SUCCESS  | concrete:extract:52 - saved /Users/macbook/git/food-detection/food-detection/baseline/data/frames/18_14_18.jpg
 2025-07-01 18:14:19.315 | SUCCESS  | concrete:extract:52 - saved /Users/macbook/git/food-detection/food-detection/baseline/data/frames/18_14_19.jpg
-2025-07-01 18:14:19.751 | SUCCESS  | concrete:extract:52 - sa
+...
 ```
