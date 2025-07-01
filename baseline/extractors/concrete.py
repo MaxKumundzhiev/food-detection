@@ -1,13 +1,15 @@
+from loguru import logger
+
 from pathlib import Path
 from base import BaseExtractor
 
+from datetime import datetime
 from enums import ExtensionToSave
 
 from av import open, VideoStream, BugError
 from av.container import InputContainer
 
 from PIL import Image
-
 
 class PyAVExtractor(BaseExtractor):
     def extract(self, source: Path, target: Path, extension_to_save: ExtensionToSave = ExtensionToSave.jpg):
@@ -19,7 +21,7 @@ class PyAVExtractor(BaseExtractor):
             target: path to folder to save frames to.
             extension_to_save: extension to save an extracted frame to.
         """
-
+        logger.info(f"start processing {source}")
         try:
             container: InputContainer = open(file=source)
         except BugError as e:
@@ -42,10 +44,14 @@ class PyAVExtractor(BaseExtractor):
         for idx, frame in enumerate(container.decode(stream)):
             if idx % int(fps) == 0:
                 try:
+                    now = datetime.now()
+                    time = now.strftime("%H_%M_%S")
                     img: Image.Image = frame.to_image()
-                    path: str = f"{target}/{idx}.{extension_to_save.value}"
+                    path: str = f"{target}/{time}.{extension_to_save.value}"
                     img.save(path)
+                    logger.success(f"saved {path}")
                 except Exception as e:
                     print(f"[WARN] Failed to save frame at idx={idx}: {e}")
+        logger.info(f"end processing {source}")
 
 
