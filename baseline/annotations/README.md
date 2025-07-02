@@ -1,12 +1,12 @@
 # Introduction
 For annotations we gonna use the "Label Studio" service.
+After retrieval procedure we've got 144 images to annotate.
 
 # Run "Label Studio" service locally
 ```bash
 $ label-studio
 -> navigate to localhost:8080
 ```
-
 
 # Run "Label Studio" service locally in container
 ```bash
