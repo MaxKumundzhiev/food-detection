@@ -1,5 +1,5 @@
-av
-pillow
-loguru
-pandas
-label-studio
+av=15.0.0
+pillow=11.3.0
+loguru=0.7.3
+pandas=2.3.0
+label-studio=1.20.0

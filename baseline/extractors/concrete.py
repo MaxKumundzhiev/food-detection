@@ -1,18 +1,22 @@
-from loguru import logger
-
 from pathlib import Path
-from base import BaseExtractor
-
 from datetime import datetime
 from enums import ExtensionToSave
 
+from base import BaseExtractor
+
+from PIL import Image
+from loguru import logger
 from av import open, VideoStream, BugError
 from av.container import InputContainer
 
-from PIL import Image
 
 class PyAVExtractor(BaseExtractor):
-    def extract(self, source: Path, target: Path, extension_to_save: ExtensionToSave = ExtensionToSave.jpg):
+    def extract(
+        self, 
+        source: Path, 
+        target: Path, 
+        extension_to_save: ExtensionToSave = ExtensionToSave.jpg
+    ):
         """
         Method, which extracts 1 frame per second from the input video and save to target directory.
 
@@ -51,7 +55,7 @@ class PyAVExtractor(BaseExtractor):
                     img.save(path)
                     logger.success(f"saved {path}")
                 except Exception as e:
-                    print(f"[WARN] Failed to save frame at idx={idx}: {e}")
+                    logger.error(f"Failed to save frame at idx={idx}: {e}")
         logger.info(f"end processing {source}")
 
 
