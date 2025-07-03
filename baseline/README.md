@@ -38,4 +38,4 @@ $ label-studio
 
 ## Pipeline Step 3: model training and testing
 It was used Google Colab to perform model training and testing;
-For mode details open `yolo_training_on_custom_datataset.ipynb` notebook;
+For more details navigate to `yolo_training_on_custom_datataset.ipynb` notebook;
