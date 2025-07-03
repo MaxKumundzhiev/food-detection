@@ -1,6 +1,5 @@
-# 🏷️ Annotation Workflow with Label Studio
-
-For the annotations it was used [Label Studio](https://labelstud.io/) service.
+# 🏷️ Annotations
+For the annotations it was used [Label Studio](https://labelstud.io/) open source service.
 
 ## 🧠 Annotation Approach
 1. Define classes by manually inspecting the source videos.
@@ -8,7 +7,7 @@ For the annotations it was used [Label Studio](https://labelstud.io/) service.
 3. Export annotations in YOLO format to `data/annotated/` for training.
 
 ## 🗂️ Label Classes
-The following categories will be used when annotating objects:
+The following classes will be used when annotating objects:
 - напиток
 - соус
 - жидкое
