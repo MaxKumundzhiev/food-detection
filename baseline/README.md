@@ -39,3 +39,15 @@ $ label-studio
 ## Pipeline Step 3: model training and testing
 It was used Google Colab to perform model training and testing;
 For more details navigate to `yolo_training_on_custom_datataset.ipynb` notebook;
+
+
+
+## Inference results
+<img width="534" alt="Screenshot 2025-07-04 at 00 27 21" src="https://github.com/user-attachments/assets/a532ab29-2055-48f3-88bc-1e9cb355584a" />
+
+<img width="536" alt="Screenshot 2025-07-04 at 00 27 35" src="https://github.com/user-attachments/assets/61c46901-af4e-4a27-828c-171385d2248f" />
+
+<img width="539" alt="Screenshot 2025-07-04 at 00 27 58" src="https://github.com/user-attachments/assets/c658cf90-c199-41b9-b245-c7280d9c0308" />
+
+
+
