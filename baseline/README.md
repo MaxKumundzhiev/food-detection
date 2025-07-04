@@ -54,4 +54,5 @@ For more details navigate to `yolo_training_on_custom_datataset.ipynb` notebook;
 <img width="539" alt="Screenshot 2025-07-04 at 00 27 58" src="https://github.com/user-attachments/assets/c658cf90-c199-41b9-b245-c7280d9c0308" />
 
 
-
+## Model
+The trained model weights can be found in the root named `best.pt`, which might be used to perform inference on serving machine;
