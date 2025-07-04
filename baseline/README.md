@@ -1,5 +1,5 @@
 # Report
-The very first suggestion is to read the `Репорт.pdf` file. aftermath, u might want get familiar with the rest of the documentation;
+The very first suggestion is to read the `Репорт.pdf` file. Aftermath, u might want get familiar with the rest of the documentation;
 
 
 # Intro
