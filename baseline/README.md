@@ -1,3 +1,7 @@
+# Report
+The very first suggestion is to read the `Репорт.pdf` file. aftermath, u might want get familiar with the rest of the documentation;
+
+
 # Intro
 The baseline represents a sequence of steps to address the `food detection` problem using a custom dataset.
 For simplicity and reproducibility, the baseline focuses on demonstrating a minimal working solution, which can be further extended and optimized later. 
